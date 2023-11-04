@@ -23,7 +23,7 @@ Cypress.Commands.add("login", (email, password) => {
     });
   }
   cy.fixture("auth").then((auth) => {
-    cy.get(auth.selectors.loginButton).type(email);
+    cy.get(auth.selectors.loginButton).click();
   });
 });
 //
